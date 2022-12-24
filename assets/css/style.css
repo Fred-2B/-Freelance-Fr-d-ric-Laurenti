@@ -392,8 +392,9 @@ img {
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;
-    font-size: 1.4rem;
-    margin-bottom: var(--mb-4);
+    font-size: 1.6rem;
+    margin-top: var(--mb-5);
+    margin-bottom: var(--mb-5);
 }
 
 .section-title {
