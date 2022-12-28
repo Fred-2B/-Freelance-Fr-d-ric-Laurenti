@@ -473,6 +473,12 @@ img {
     font-size: 17px;
 }
 
+.portfolio__link-name .sub {
+    color: var(--dark-color);  
+    text-align: center;
+    font-style: italic;
+}
+
 .portfolio__link-name p {
     font-size: .8rem;
     text-align: center;
