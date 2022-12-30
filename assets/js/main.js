@@ -52,6 +52,12 @@ const sr = ScrollReveal({
     reset: true
 })
 
+// INFO BULE 
+    $(document).ready(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+    });
+    
+
 // Scroll Home
 sr.reveal('.home__title', {})
 sr.reveal('.home__profession', {delay: 300})

@@ -95,11 +95,12 @@ img {
 
 /* Class Css */
 .section {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .module__video {
     background-color: var(--white-color);
+    padding: 2rem 0 0;
 }
 
 .movie  video {
@@ -432,6 +433,7 @@ img {
 /* Portfolio */
 .portfolio {
     background-color: var(--white-color);
+    padding-bottom: var(--mb-5);
 }
 
 .portfolio__container {
@@ -570,23 +572,26 @@ img {
     text-transform: uppercase;
 }
 
-.contact__projet p {
+.contact__projet {
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
     padding-bottom: var(--mb-5);
-    font-size: 2.6rem;
-    color: var(--first-color);
+    font-size: 1.5rem;
 }
 
-.contact__projet a {
-    color: var(--text-gray);
-    cursor: pointer;
+.contact__projet p {
+    color: var(--text-color);
     letter-spacing: 2px;
-    position:relative;
-    overflow:hidden;
-    transition: all .4s;
+   /*position:relative;
+    overflow:hidden;*/
+    transition: .7s ease-in-out;
+    padding: 10px 40px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 20px;
 }
 
-.contact__projet a:before {
+/*.contact__projet a:before {
     content: "";
     position: absolute;
     width: 0;
@@ -601,10 +606,11 @@ img {
 .contact__projet a:hover:before {
     width: 100%;
     left:0;
-}
+}*/
 
-.contact__projet a:hover {
-    color: var(--dark-color);
+.contact__projet p:hover {
+    color: var(--white-color);
+    background-color: var(--text-gray);
 }
 
 .contact__subtitle {
