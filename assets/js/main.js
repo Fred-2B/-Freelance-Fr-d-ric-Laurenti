@@ -53,9 +53,9 @@ const sr = ScrollReveal({
 })
 
 // INFO BULE 
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-    });
+   // $(document).ready(function(){
+      //$('[data-toggle="tooltip"]').tooltip();
+    //});
     
 
 // Scroll Home

@@ -100,8 +100,8 @@ img {
 }
 
 .module__video {
-    background-color: var(--white-color);
-    padding: 2rem 0 0;
+    background-color: var(--text-gray);
+    padding: .5rem 0 0;
 }
 
 .movie  video {
@@ -125,7 +125,7 @@ img {
     top: 30%;
     line-height: 2.4;
     color: var(--white-color);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-shadow: 0 0 0.2em var(--first-color), 0 0 0.2em var(--first-color),
     0 0 0.2em var(--first-color), 
     -1px 0 var(--first-color), 0 1px var(--first-color),
@@ -294,7 +294,7 @@ img {
 .home__profession {
     color: var(--white-color);
     font-size: 2.8rem;
-    align-self: start;
+    align-self: center;
     text-align: center;
     margin-top: 2rem;
     text-shadow: 6px 3px 3px #333333;
@@ -304,11 +304,12 @@ img {
     color: var(--white-color);
     font-size: 2.8rem;
     text-align: end;
+    align-self: center;
     text-shadow: 6px 3px 3px #333333;
 }
 
 .home__subtitle .clignote {
-    font-size: 6rem;
+    font-size: 8rem;
     animation-duration: .8s;
     animation-name: clignoter;
     animation-iteration-count: infinite;
@@ -575,26 +576,46 @@ img {
 }
 
 .contact__projet {
-    width: 50%;
-    margin: 0 auto 4rem;
-    border: 1px solid var(--text-gray);
-    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 20px;
-    transition: .5s ease-in-out; 
+    text-align: center;
+    margin: 4rem auto 5.5rem;
+    padding: 0 20px;
 }
 
-.contact__projet p {
-    color: var(--first-color);
-    font-size: 1.5rem;
+a.info {
+    position: relative;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 1.6rem;
     font-weight: 500;
     letter-spacing: 2px;
-    text-align: center;
-    padding: 10px 40px;
-    transition: .5s ease-in-out;
+    color: var(--first-color);
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 3px 20px;
+    transition: all .5s;
 }
 
-.contact__projet p:hover {
-    color: var(--white-color);
+a.info span {
+    display: none; /* On masque l'infobulle. */
+}
+
+a.info:hover {
+    background: none; /* Correction d'un bug d'Internet Explorer. */
+    z-index: 500; /* On définit une valeur pour l'ordre d'affichage. */
     background-color: var(--text-gray);
+    color: var(--white-color);
+}
+
+a.info:hover span {
+    display: inline; /* On affiche l'infobulle. */
+    position: absolute;
+    font-size: .8rem;
+    white-space: nowrap; /* On change la valeur de la propriété white-space pour qu'il n'y ait pas de retour à la ligne non désiré. */
+    top: 60px; /* On positionne notre infobulle. */
+    left: 30%;
+    padding: 3px;
+    color: var(--first-color);
+    background-color: var(--white-color);
+    border: 1px solid var(--text-color);
 }
 
 .contact__subtitle {
@@ -737,7 +758,7 @@ img {
         margin: 0;
     }
     .section {
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
     .section-title {
         margin-bottom: 3rem;
