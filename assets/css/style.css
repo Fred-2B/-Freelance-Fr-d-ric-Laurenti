@@ -190,7 +190,7 @@ img {
     text-align: center;
     top: -33px;
     z-index: 0;
-    opacity: 0.10;
+    opacity: 0.15;
 }
 
 .module__line {
@@ -305,15 +305,7 @@ img {
     text-shadow: 6px 3px 3px #333333;
 }
 
-.home__subtitle {
-    color: var(--white-color);
-    font-size: 2.8rem;
-    text-align: end;
-    align-self: center;
-    text-shadow: 6px 3px 3px #333333;
-}
-
-.home__subtitle .clignote {
+.home__profession .clignote {
     font-size: 8rem;
     animation-duration: .8s;
     animation-name: clignoter;
