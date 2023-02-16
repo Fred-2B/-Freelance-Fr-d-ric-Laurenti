@@ -44,6 +44,7 @@ function scrollActive() {
     })
 }
 
+
 // Scroll Reveal Animation
 const sr = ScrollReveal({
     origin: 'top',
@@ -51,13 +52,6 @@ const sr = ScrollReveal({
     duration: '2000',
     reset: true
 })
-
-// INFO BULE 
-   // $(document).ready(function(){
-      //$('[data-toggle="tooltip"]').tooltip();
-    //});
-    
-
 // Scroll Home
 sr.reveal('.home__title', {})
 sr.reveal('.home__profession', {delay: 300})
@@ -68,10 +62,10 @@ sr.reveal('.home__scroll', {delay:800})
 sr.reveal('.module__title span', {interval: 300})
 
 // Scroll About
-sr.reveal('.about__img', {delay: 200})
-sr.reveal('.about__subtitle', {delay: 400})
-sr.reveal('.about__profession', {delay: 500})
-sr.reveal('.about__text', {delay: 600})
+sr.reveal('.about__img', {delay: 300})
+/*sr.reveal('.about__subtitle', {delay: 400})*/
+/*sr.reveal('.about__profession', {delay: 500})*/
+sr.reveal('.about__text', {delay: 500})
 sr.reveal('.about__social-icon', {delay: 800, interval:300})
 
 // Scroll Skills
