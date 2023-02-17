@@ -169,7 +169,7 @@ img {
 }
 
 .header__title {
-    margin: 50px auto;
+    margin: 80px 0 50px;
     text-align: center;
 }
 
@@ -190,7 +190,7 @@ img {
     text-align: center;
     top: -33px;
     z-index: 0;
-    opacity: 0.15;
+    opacity: 0.10;
 }
 
 .module__line {
@@ -239,7 +239,7 @@ img {
 
 .nav__logo {
     position: absolute;
-    top: 10px;
+    top: 13px;
     color:  var(--text-gray);
     font-size: 1.8rem;
     transition-duration: 0.7s;
@@ -499,20 +499,21 @@ img {
     background-color: rgba(117, 117, 117, 0.5);
     backdrop-filter: blur(15px);
     border-radius: 5px;
+    padding-top: 15px;
 }
 
-.module__title {
-    margin: 0 auto;
-    padding: 0 15px;
+.module__text h4 {
+    margin: 0 0 3px;
     text-align: center;
-    font-size: 1.6rem;
-    margin-top: var(--mb-3);
+    font-size: 1.4rem;
+    color: var(--dark-color);
 }
 
 .module__text .text {
-    padding: 40px;
-    font-size: 1.2rem;
+    padding: 0 40px 20px;
+    font-size: 1.1rem;
     text-align: center;
+    color: var(--white-color);
 }
 
 .service__container {
@@ -565,10 +566,6 @@ img {
 
 .module__icone:hover .icone__link {
     bottom: 0;
-}
-
-.module__text p {
-    color: var(--white-color);
 }
 
 /* Contact */
@@ -872,7 +869,6 @@ a.info:hover span {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -901,14 +897,10 @@ a.info:hover span {
     }
     .contact {
         height: 100%;
-    }
-    .contact__form {
+     }
+     .contact__form {
         margin: 0 80px;
-    }
-    .contact__projet a.info {
-        font-size: 1rem;
-        box-shadow: none;
-    }
+     }
 }
 
 @media screen and (min-width: 1024px) {
